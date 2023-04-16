@@ -32,9 +32,9 @@ const Navbar = () => {
             </div>
 
             <div className={` ${s['navigation']} `} >
-               <Link href={'/about-us'}><button><p>About Us</p></button></Link>
-               <Link href={'/application'}><button><p>Applications</p></button></Link>
-               <Link href={'/privacy-policy'}><button><p>Privacy Policy</p></button></Link>
+               <Link href={'/about-us'}><button><p>About</p></button></Link>
+               <Link href={'/software'}><button><p>Software</p></button></Link>
+               <Link href={'/services'}><button><p>Services</p></button></Link>
             </div>
 
 
