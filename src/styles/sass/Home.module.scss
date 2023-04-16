@@ -1,0 +1,37 @@
+@import '@/styles/_mixin.scss';
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+}
+
+.section1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3rem;
+
+   h1 {
+      font-size: 45px;
+      @include textfill(--fable);
+      @include textfillanim;
+
+
+   }
+}
+
+.section2 {
+   @include section;
+
+   p {
+      @include row;
+      font-size: 21px;
+      color: var(--gray);
+      text-align: center;
+   }
+
+}

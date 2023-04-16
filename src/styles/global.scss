@@ -1,0 +1,30 @@
+button {
+   color: white;
+   padding: 0.6rem;
+   border-radius: 9px;
+   background-color: black;
+   border: 2.1px solid transparent;
+   cursor: pointer;
+
+   p {
+      background: var(--btn);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+
+   }
+
+   &:hover {
+      border: 2.1px solid transparent;
+      background-image: var(--btnBorder);
+      box-shadow: 2px 1000px 1px #000 inset;
+
+      p {
+         background: black;
+         -webkit-text-fill-color: var(--lightwhite);
+
+      }
+   }
+
+}
