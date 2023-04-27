@@ -1,4 +1,10 @@
-@mixin contianer() {}
+@mixin container() {
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   min-height: 1200px;
+
+}
 
 @mixin col() {
    display: flex;
@@ -44,10 +50,71 @@
    }
 }
 
+@keyframes gradient-anim2 {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 50% 100%;
+   }
+
+   100% {
+      background-position: 100% 50%;
+   }
+}
+
 @mixin textfillanim() {
    animation: gradient-anim 15s ease infinite;
    -moz-animation: gradient-anim 15s ease infinite;
    -webkit-animation: gradient-anim 15s ease infinite;
 
 
+}
+
+
+@mixin textfillanim2() {
+   animation: gradient-anim2 15s ease infinite;
+   -moz-animation: gradient-anim2 15s ease infinite;
+   -webkit-animation: gradient-anim2 15s ease infinite;
+
+
+}
+
+
+@mixin buttonfable($color : '') {
+
+   @if($color =='') {
+      $color : --fable
+   }
+
+   background: var($color);
+   background-size: 400%;
+   color: rgb(0, 0, 0);
+   font-size: medium;
+   font-weight: 400;
+   width: 100%;
+   min-height: 100%;
+   height: 100%;
+   border-radius: 3px;
+   background-repeat: none;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   -moz-background-clip: padding-box;
+
+
+
+   @include textfillanim();
+
+   p {
+      @include textfill(--darken);
+      @include textfillanim;
+   }
+
+
+   &:hover {
+      color: var(--lightwhite);
+      background-color: black;
+      box-shadow: 0 0 9px #eee;
+   }
 }

@@ -11,12 +11,27 @@
   --pheonix: linear-gradient(to top, #f83600bf 0%, #f9d523da 100%);
   --eternal: linear-gradient(to top, #09203f 0%, #537895 100%);
   --mango: linear-gradient(to top, #c71d6f 0%, #d09693 100%);
+
   --fable: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 
 
+  --aquasunset: linear-gradient(-225deg, #154a57 0%, #107a55 29%, #8a846b 67%, #a16738 100%);
+
+
+  --reddark: linear-gradient(-225deg, #f83600bf 0%, #a83863bf 29%, #e6b980 67%, #355715 100%);
+
+  --darken: linear-gradient(-225deg, #f1f1f1 0%, #c7a46d 29%, #000000 67%, #000000 100%);
+
+
   --lightwhite: #d5d1d1;
+  --lightwhite2: #c1c0c0;
   --gray: rgb(148, 148, 148);
   --darkgray: rgb(10, 3, 27);
+  --fableblue: #231557;
+  --reddarkpink: #a83863bf;
+  --reddarkgreen: #355715;
+
+
 
   --btn: gray;
   --btnBorder: var(--pheonix);

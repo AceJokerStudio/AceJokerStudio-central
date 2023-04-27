@@ -3,6 +3,8 @@ import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
 
 
+import s from './../sass/Layout.module.scss';
+
 const Layout = ({ children }) => {
    //standard
 
@@ -13,11 +15,13 @@ const Layout = ({ children }) => {
 
    return (
       <>
-         <nav>
+         <nav className={` ${s['navigation-container']} `} >
             <Navbar />
+
          </nav>
 
-         <main>
+
+         <main className={` ${s['main']} `} >
             {
                children
             }

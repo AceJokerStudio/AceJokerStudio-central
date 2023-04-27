@@ -1,7 +1,7 @@
 button {
    color: white;
    padding: 0.6rem;
-   border-radius: 9px;
+   border-radius: 3px;
    background-color: black;
    border: 2.1px solid transparent;
    cursor: pointer;
@@ -16,14 +16,10 @@ button {
    }
 
    &:hover {
-      border: 2.1px solid transparent;
-      background-image: var(--btnBorder);
-      box-shadow: 2px 1000px 1px #000 inset;
+
 
       p {
-         background: black;
          -webkit-text-fill-color: var(--lightwhite);
-
       }
    }
 
