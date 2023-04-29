@@ -1,0 +1,20 @@
+@import '@/styles/_mixin.scss';
+
+.container {
+   @include container;
+}
+
+
+.section1 {
+   @include section(center, center);
+}
+
+
+.section2 {
+   @include section(center, center);
+}
+
+
+.section3 {
+   @include section(center, center);
+}

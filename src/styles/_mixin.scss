@@ -19,9 +19,30 @@
    align-items: center;
 }
 
-@mixin section() {
+@mixin section($align : '', $align2 : '') {
    margin-top: 3rem;
-   @include col;
+   gap: 0.9rem;
+   display: flex;
+
+   @if ($align =='') {
+      justify-content: center;
+   }
+
+   @else {
+      justify-content: $align;
+   }
+
+   @if($align2 =='') {
+      align-items: center;
+   }
+
+   @else {
+      align-items: $align2;
+   }
+
+
+   flex-direction: column;
+
 }
 
 

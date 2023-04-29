@@ -1,0 +1,35 @@
+@import '@/styles/_mixin.scss';
+
+.container {
+   @include container;
+}
+
+
+.section1 {
+   @include section(flex-start, flex-start);
+
+   div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 95%;
+
+      button {
+         margin-top: 3rem;
+         width: fit-content;
+         background-color: #1b1b1b;
+
+      }
+   }
+
+}
+
+
+.section2 {
+   @include section(center, center);
+}
+
+
+.section3 {
+   @include section(center, center);
+}
