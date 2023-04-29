@@ -18,7 +18,31 @@ const Software = ({ application, news }) => {
    return (
       <div className={` ${s['container']} `} >
 
+         <section className={` ${s['section1']} `} >
+            <h1>Latest Release News</h1>
+            <div className={` ${s['newscontent']} `} >
+               {
+                  news?.map((item, index) => (
 
+                     <div key={item.title + index}>
+                        <h3>{
+                           item?.title
+                        }</h3>
+
+                        <p>{
+                           item?.content
+                        }</p>
+
+                        <p className={`${s['date']}`}>{
+                           `Published Date: ${item?.date}`
+                        }</p>
+                     </div>
+
+                  ))
+               }
+            </div>
+
+         </section>
 
          <section className={` ${s['section2']} `} >
 
@@ -83,33 +107,6 @@ const Software = ({ application, news }) => {
 
          </section>
 
-
-
-         <section className={` ${s['section1']} `} >
-            <h1>Latest Release News</h1>
-            <div className={` ${s['newscontent']} `} >
-               {
-                  news?.map((item, index) => (
-
-                     <div key={item.title + index}>
-                        <h3>{
-                           item?.title
-                        }</h3>
-
-                        <p>{
-                           item?.content
-                        }</p>
-
-                        <p className={`${s['date']}`}>{
-                           `Published Date: ${item?.date}`
-                        }</p>
-                     </div>
-
-                  ))
-               }
-            </div>
-
-         </section>
          <section className={` ${s['section4']} `} >
 
          </section>

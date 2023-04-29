@@ -15,7 +15,6 @@
    &>h1 {
       @include textfill(--fable);
       @include textfillanim;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.62);
       margin-top: 3rem;
       margin-bottom: 1rem;
    }
@@ -75,7 +74,6 @@
    &>h1 {
       @include textfill(--aquasunset);
       @include textfillanim;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.62);
       margin-bottom: 1rem;
    }
 
@@ -96,16 +94,22 @@
          margin-bottom: 1rem;
 
 
+         h3 {
+            flex: 0.25;
+         }
 
          li {
             list-style: none;
 
          }
 
+         &>p:nth-of-type(1) {
+            flex: 0.7;
+         }
 
          &>p:nth-of-type(2) {
             font-style: italic;
-            font-weight: bold;
+            flex: 0.10;
          }
 
          button {
@@ -149,7 +153,6 @@
    &>h1 {
       @include textfill(--reddark);
       @include textfillanim;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.62);
       margin-bottom: 1rem;
    }
 
@@ -162,7 +165,7 @@
          display: flex;
          flex: 1;
          gap: 3rem;
-         justify-content: center;
+         justify-content: flex-start;
          align-items: center;
          background-color: var(--reddarkpink);
          color: black;
@@ -176,16 +179,15 @@
 
          }
 
-
-         &>p:nth-of-type(2) {
-            font-style: italic;
-            font-weight: bold;
+         h3 {
+            flex: 1;
          }
 
          button {
             background-color: var(--lightwhite2);
             height: 100%;
             width: 100%;
+            flex: 0.25;
 
             svg {
 

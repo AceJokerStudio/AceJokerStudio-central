@@ -13,7 +13,9 @@ export async function getStaticProps() {
       props: {
          application,
          news
-      }
+      },
+      // every 9min revalidate
+      revalidate: 540
    }
 }
 
